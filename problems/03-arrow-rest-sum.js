@@ -10,8 +10,14 @@ arrowRestSum(1, 2, 3, 4, 5, 6, 7, 8, 9); // => 14
 arrowRestSum(0); // => 0
 ***********************************************************************/
 
-// your code here!
-
+const arrowRestSum = (...param) => {
+  // return a value that is equal to the elements in the array added together
+  //create a variable for the end value
+  let value = param.reduce((acc,num) => (acc += num));
+  //use reduce function to add each element together in the array
+  // return end value cariable
+  return value;
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
