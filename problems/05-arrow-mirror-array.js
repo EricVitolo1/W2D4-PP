@@ -10,7 +10,18 @@ arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
 arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 ***********************************************************************/
 
-// your code here
+let arrowMirrorArray = (array) => {
+  //were going to take in an array as the initial argument
+  //return the new array which will be mirrored
+  //write it with arrow function
+let newArray = array.slice();
+    array.reverse();
+
+return newArray.concat(array);
+
+
+
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
